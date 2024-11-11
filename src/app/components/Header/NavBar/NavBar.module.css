@@ -16,5 +16,5 @@
 }
 
 .list a:hover {
-  color: #02b3f9;
+  color: var(--dark-blue);
 }

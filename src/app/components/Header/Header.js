@@ -1,5 +1,5 @@
 // Components
-import NavBar from "../NavBar/NavBar";
+import NavBar from "./NavBar/NavBar";
 
 // Style
 import s from "./Header.module.css";

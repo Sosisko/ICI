@@ -3,7 +3,9 @@
   --white-background: #fff;
   --foreground: #171717;
   --gray: #616161;
+  --light-gray: #f7f7f7;
   --blue: #016fb4;
+  --dark-blue: #0d80ce;
 }
 
 html,
@@ -13,7 +15,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--gray);
   background: var(--white-background);
   font-family: var(--font-montserrat-alternates);
   font-weight: 500;
@@ -49,7 +51,7 @@ img {
 button {
   cursor: pointer;
   border: 2px solid rgb(255, 255, 255);
-  background: #016fb4;
+  background: var(--blue);
   color: var(--background);
   background: transparent;
   padding: 20px 30px;
@@ -60,7 +62,7 @@ button {
 }
 
 button:hover {
-  border: 2px solid var(--blue);
+  border: 2px solid var(--dark-blue);
   background: var(--white-background);
-  color: var(--blue);
+  color: var(--dark-blue);
 }
