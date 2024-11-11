@@ -1,15 +1,25 @@
-import localFont from "next/font/local";
+// Core
+import { Play, Raleway } from "next/font/google";
+
+// Components
+import Header from "./components/Header/Header";
+
+// Style
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const play = Play({
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--font-montserrat-alternates",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const raleway = Raleway({
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-montserrat-alternates",
+  display: "swap",
 });
 
 export const metadata = {
@@ -19,8 +29,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="ru" className={play.className}>
+      <body>
+        <Header />
         {children}
       </body>
     </html>
