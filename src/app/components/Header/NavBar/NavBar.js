@@ -18,7 +18,7 @@ function NavBar() {
           </Link>
         </li>
         <li>
-          <Link classname={s.navLink} href="/catalog">
+          <Link classname={s.navLink} href="#catalog">
             Каталог
           </Link>
         </li>

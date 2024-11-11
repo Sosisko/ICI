@@ -1,0 +1,41 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  background: url("/images/hero/banner.png") center center / cover
+    no-repeat;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.textBlock {
+  color: #fff;
+  padding-left: 10%;
+  max-width: 50%;
+}
+
+.wrapper {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 179, 249, 1) 0%,
+    rgba(2, 179, 249, 0.87718837535014) 40%,
+    rgba(2, 179, 249, 0) 100%
+  );
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.subTitle {
+  margin-bottom: 60px;
+  max-width: 600px;
+  font-size: 18px;
+}
