@@ -1,0 +1,20 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 78px;
+}

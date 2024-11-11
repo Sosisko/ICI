@@ -1,0 +1,20 @@
+.nav {
+  flex: 1;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--gray);
+}
+
+.list a {
+ transition: all 0.2s ease;
+ font-size: 18px;
+}
+
+.list a:hover {
+  color: #02b3f9;
+}

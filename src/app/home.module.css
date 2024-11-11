@@ -1,0 +1,90 @@
+.swiperContainer {
+  height: calc(100vh - 100px);
+}
+
+.slideOne,
+.slideTwo,
+.slideThree {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+
+.slideOne {
+  background-image: url("/images/GreenvitRzonka1low-scaled.jpg");
+}
+
+.slideTwo {
+  background-image: url("/images/Merck18LOW-scaled.jpg");
+}
+
+.slideThree {
+  background-image: url("/images/IMG-20180914-WA0021.jpg");
+}
+
+.slideOne::before,
+.slideTwo::before,
+.slideThree::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(91, 191, 253, 0.575);
+  z-index: 1;
+}
+
+.firstSection {
+  display: flex;
+  align-items: center;
+  background: url("/images/snapedit_1731228376960.png") center center / cover
+    no-repeat;
+  height: calc(100vh - 100px);
+  width: 100%;
+  animation: zoomOut 15s forwards;
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.5); /* Start at normal size */
+  }
+  100% {
+    transform: scale(1); /* End at 120% size */
+  }
+}
+.textBlock {
+  color: #fff;
+  padding-left: 10%;
+  max-width: 50%;
+}
+
+.rightSide {
+  flex: 100%;
+}
+
+.wrapper {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 179, 249, 1) 0%,
+    rgba(2, 179, 249, 0.87718837535014) 40%,
+    rgba(2, 179, 249, 0) 100%
+  );
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.subTitle {
+  margin-bottom: 30px;
+}
