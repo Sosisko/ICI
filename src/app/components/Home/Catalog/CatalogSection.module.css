@@ -84,3 +84,7 @@
   opacity: 1;
   border-radius: 6px;
 }
+
+.itemSubtitle {
+  line-height: 1.3;
+}

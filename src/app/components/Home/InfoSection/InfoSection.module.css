@@ -16,3 +16,14 @@
 .imgBlock img {
   border-radius: 6px;
 }
+
+.title {
+  color: var(--blue);
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
