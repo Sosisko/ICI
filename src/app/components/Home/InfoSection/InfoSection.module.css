@@ -1,0 +1,18 @@
+.infoSection {
+  position: relative;
+  padding: 80px 0;
+  background: #01337f url("/images/main-testimonial-bg.jpg") center center / cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.infoBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.imgBlock img {
+  border-radius: 6px;
+}

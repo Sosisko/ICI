@@ -1,3 +1,6 @@
+// Core
+import Link from "next/link";
+
 // Styles
 import s from "./CatalogSection.module.css";
 
@@ -7,49 +10,73 @@ const CatalogSection = () => {
       <h2 className={s.title}>Каталог ICI CALDAIE</h2>
       <ul className={s.list}>
         <li className={s.item}>
-          <h3 className={s.itemTitle}>Водогрейные котлы</h3>
-          <p className={s.itemText}>
-            Генераторы горячей воды, выполненные в дымотрубном, трехвитковом или
-            реверсивном типах, характеризуются высоким содержанием воды.
-            Мощность этих генераторов удовлетворяет потребности от 2500 до 20000
-            кВт.
-          </p>
-          <img
-            className={s.itemImg}
-            src="/images/catalog/vodogreinye-kotly.jpg"
-          />
+          <div className={s.itemText}>
+            <Link href="/catalog/vodogreinye-kotly">
+              <h3 className={s.itemTitle}>Водогрейные котлы</h3>
+            </Link>
+            <p className={s.itemSubtitle}>
+              Генераторы горячей воды, выполненные в дымотрубном, трехвитковом
+              или реверсивном типах, характеризуются высоким содержанием воды.
+            </p>
+          </div>
+          <Link href="/catalog/vodogreinye-kotly">
+            <img
+              className={s.itemImg}
+              src="/images/catalog/vodogreinye-kotly.jpg"
+            />
+          </Link>
         </li>
         <li className={s.item}>
-          <h3 className={s.itemTitle}>Паровые котлы</h3>
-          <p className={s.itemText}>
-            Парогенераторы встроены в дымовую трубу, трехходового или
-            реверсивного типа пламени. Все генераторы могут быть объединены с
-            системами освобождения арендаторов на срок до 72 часов (GSS).
-            Мощность подачи пара составляет от 50 до 32000 кг/ч.
-          </p>
-          <img className={s.itemImg} src="/images/catalog/parovye-kotly.jpg" />
+          <div className={s.itemText}>
+            <Link href="/catalog/parovye-kotly">
+              <h3 className={s.itemTitle}>Паровые котлы</h3>
+            </Link>
+            <p className={s.itemSubtitle}>
+              Горизонтальные и модульные модели производительностью 50 – 25000
+              кг/ч и давлением пара от 0,2 до 25 бар.
+            </p>
+          </div>
+          <Link href="/catalog/parovye-kotly">
+            <img
+              className={s.itemImg}
+              src="/images/catalog/parovye-kotly.jpg"
+            />
+          </Link>
         </li>
         <li className={s.item}>
-          <h3 className={s.itemTitle}>Котлы на перегретой воде</h3>
-          <p className={s.itemText}>
-            Генераторы перегретой воды встроенные в дымовую трубу, трехходового
-            и реверсивного типа, предназначены для отопительных или
-            технологических систем с рабочей температурой выше 110°С. Мощность
-            этих генераторов удовлетворяет потребности от 200 до 17000 кВт.
-          </p>
-          <img
-            className={s.itemImg}
-            src="/images/catalog/na-peregretoy-vode-kotly.jpg"
-          />
+          <div className={s.itemText}>
+            <Link href="/catalog/na-peregretoy-vode-kotly">
+              <h3 className={s.itemTitle}>Котлы на перегретой воде</h3>
+            </Link>
+            <p className={s.itemSubtitle}>
+              Генераторы перегретой воды,
+              трехходового и реверсивного типа, предназначены для отопительных
+              или технологических систем с рабочей температурой выше 110°С.
+            </p>
+          </div>
+          <Link href="/catalog/na-peregretoy-vode-kotly">
+            <img
+              className={s.itemImg}
+              src="/images/catalog/na-peregretoy-vode-kotly.jpg"
+            />
+          </Link>
         </li>
         <li className={s.item}>
-          <h3 className={s.itemTitle}>Котлы на диатермическом масле</h3>
-          <p className={s.itemText}>
-            Теплогенераторы на диатермическом масле ICI Caldaie выполнены по
-            трехходовому типу, с низкими тепловыми нагрузками и высокими
-            скоростями масла для исключения риска растрескивания самого масла.
-          </p>
-          <img className={s.itemImg} src="/images/catalog/na-masle-kotly.jpg" />
+          <div className={s.itemText}>
+            <Link href="/catalog/na-masle-kotly">
+              <h3 className={s.itemTitle}>Котлы на диатермическом масле</h3>
+            </Link>
+            <p className={s.itemSubtitle}>
+              Термомасляные котлы серии OPX мощностью 116 – 9302 кВт расчетным
+              давлением до 10 бар.
+            </p>
+          </div>
+          <Link href="/catalog/na-masle-kotly">
+            <img
+              className={s.itemImg}
+              src="/images/catalog/na-masle-kotly.jpg"
+            />
+          </Link>
         </li>
       </ul>
     </section>
