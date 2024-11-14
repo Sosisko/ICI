@@ -1,5 +1,6 @@
-// Styles
+"use client";
 
+// Styles
 import s from "./HeroSection.module.css";
 
 const HeroSection = () => {

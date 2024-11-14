@@ -1,3 +1,4 @@
+"use client";
 // Styles
 import s from "./Footer.module.css";
 

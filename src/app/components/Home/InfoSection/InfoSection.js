@@ -1,3 +1,5 @@
+"use client";
+
 // Styles
 import s from "./InfoSection.module.css";
 
