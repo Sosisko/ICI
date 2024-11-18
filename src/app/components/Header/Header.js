@@ -36,7 +36,6 @@ function Header() {
     };
   }, []);
 
-  console.log("isVisible", isVisible);
 
   return (
     <header
@@ -51,7 +50,7 @@ function Header() {
             src="/images/logo.png"
             alt="Logo"
           />
-          <NavBar />
+          <NavBar isVisible={isVisible}/>
         </div>
       </div>
     </header>

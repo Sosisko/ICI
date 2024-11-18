@@ -6,7 +6,7 @@ import Link from "next/link";
 // Style
 import s from "./NavBar.module.css";
 
-function NavBar() {
+function NavBar({isVisible}) {
   const [showCatalogMenu, setShowCatalogMenu] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -24,25 +24,29 @@ function NavBar() {
     }, 100);
   };
 
+console.log(isVisible);
+
+
   return (
     <nav className={s.nav}>
-      <ul className={s.list}>
-        <li className={s.listItem}>
+      <ul className={`${s.list}`}>
+        <li className={`${s.listItem} ${isVisible ? s.smallListItem : ""}`}>
           <Link className={s.navLink} href="/">
             Главная
           </Link>
         </li>
-        <li className={s.listItem}>
+        <li className={`${s.listItem} ${isVisible ? s.smallListItem : ""}`}>
           <Link className={s.navLink} href="/info">
             О производстве
           </Link>
         </li>
         <li
-          className={`${s.listItem} ${s.catalogLink}`}
+          className={`${s.listItem} ${s.catalogLink} ${isVisible ? s.smallListItem : ""}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           Каталог
+          <span className={s.caret}></span>
           <ul className={`${s.catalogMenu} ${showCatalogMenu ? s.show : ""}`}>
             <li className={s.catalogMenuItem}>
               <Link href="/catalog/vodogreinye-kotly">Водогрейные котлы</Link>
@@ -51,18 +55,18 @@ function NavBar() {
               <Link href="/catalog/parovye-kotly">Паровые котлы</Link>
             </li>
             <li className={s.catalogMenuItem}>
-              <Link href="/catalog/kotly-na-peregretoj-vode">
+              <Link href="/catalog/na-peregretoy-vode-kotly">
                 Котлы на перегретой воде
               </Link>
             </li>
             <li className={s.catalogMenuItem}>
-              <Link href="/catalog/kotly-na-diatermicheskom-masle">
+              <Link href="/catalog/na-diatermicheskom-masle-kotly">
                 Котлы на диатермическом масле
               </Link>
             </li>
           </ul>
         </li>
-        <li className={s.listItem}>
+        <li className={`${s.listItem} ${isVisible ? s.smallListItem : ""}`}>
           <Link className={s.navLink} href="/contacts">
             Контакты
           </Link>
