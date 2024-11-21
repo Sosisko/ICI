@@ -2,8 +2,11 @@
 // Core
 import Link from "next/link";
 
+// Components
+import Footer from "../../components/Footer/Footer";
+
 // Styles
-import s from "./thermalOilBoilers.module.css";
+import s from "../catalog.module.css";
 
 function thermalOilBoilers() {
   return (
@@ -12,7 +15,9 @@ function thermalOilBoilers() {
         <div className={s.wrapper}>
           <div className={s.textBlock}>
             <div className={s.text}>
-              <h1 className={s.title}>Котлы на диатермическом масле <br /> ICI CALDAIE</h1>
+              <h1 className={s.title}>
+                Котлы на диатермическом масле <br /> ICI CALDAIE
+              </h1>
               <p className={s.subtitle}>Котлы серий OPX, OPX REC, EVX</p>
               <p>Производительностью 116 - 10465 кВт</p>
             </div>
@@ -49,7 +54,7 @@ function thermalOilBoilers() {
               <Link href="/catalog/vodogreinye-kotly">
                 <img
                   className={s.itemImg}
-                 src="/images/catalog/na-diatermicheskom-masle-kotly/OPXREC.jpg"
+                  src="/images/catalog/na-diatermicheskom-masle-kotly/OPXREC.jpg"
                 />
               </Link>
             </li>
@@ -64,13 +69,14 @@ function thermalOilBoilers() {
               <Link href="/catalog/vodogreinye-kotly">
                 <img
                   className={s.itemImg}
-                 src="/images/catalog/na-diatermicheskom-masle-kotly/EVX.jpg"
+                  src="/images/catalog/na-diatermicheskom-masle-kotly/EVX.jpg"
                 />
               </Link>
             </li>
           </ul>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

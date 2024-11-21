@@ -24,9 +24,6 @@ function NavBar({isVisible}) {
     }, 100);
   };
 
-console.log(isVisible);
-
-
   return (
     <nav className={s.nav}>
       <ul className={`${s.list}`}>

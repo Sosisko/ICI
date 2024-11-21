@@ -1,3 +1,30 @@
+.hotWaterBoilers {
+  background: url("/images/catalog/vodogreinye-kotly/TNOXprincipale_2024-2048x1426.png")
+    no-repeat;
+  background-position: 80% center;
+  background-size: contain;
+  height: 400px;
+  width: 100%;
+  color: var(--white-background);
+}
+
+.thermalOilBoilers {
+  background: url("/images/catalog/na-masle-kotly.jpg") no-repeat;
+  background-position: 80% center;
+  background-size: contain;
+  height: 400px;
+  width: 100%;
+  color: var(--white-background);
+}
+
+.superheatedWaterBoilers {
+  background: url("/images/catalog/na-peregretoy-vode-kotly.jpg") no-repeat;
+  background-position: 80% center;
+  background-size: contain;
+  height: 400px;
+  width: 100%;
+  color: var(--white-background);
+}
 .steamBoilers {
   background: url("/images/catalog/parovye-kotly.jpg") no-repeat;
   background-position: 80% center;
@@ -119,3 +146,72 @@
 .itemSubtitle {
   line-height: 1.3;
 }
+
+
+
+.productBannerSection {
+    width: 100%;
+    color: var(--light-blue);
+  }
+  .description p {
+    line-height: 1.3;
+  }
+  
+  .productWrapper {
+    background-color: var(--light-gray);
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .productContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .productImageBlock {
+    max-width: 50%;
+  }
+  
+  .productTitle {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  
+  .productSubtitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .description {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .descriptionBlock {
+    margin-bottom: 40px;
+  }
+  
+  .descriptionTitle {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: var(--white-background);
+    padding: 15px;
+    background-color: var(--light-blue);
+    border-radius: 6px;
+  }
+  
+  .descriptionSubtitle {
+    margin-bottom: 10px;
+  }
+  
+  .descriptionText {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  
+  .descriptionBlock ul {
+    margin-bottom: 10px;
+  }

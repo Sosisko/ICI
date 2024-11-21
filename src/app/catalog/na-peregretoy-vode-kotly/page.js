@@ -2,8 +2,11 @@
 // Core
 import Link from "next/link";
 
+// Components
+import Footer from "../../components/Footer/Footer";
+
 // Styles
-import s from "./superheatedWaterBoilers.module.css";
+import s from "../catalog.module.css";
 
 function steamBoilers() {
   return (
@@ -12,7 +15,9 @@ function steamBoilers() {
         <div className={s.wrapper}>
           <div className={s.textBlock}>
             <div className={s.text}>
-              <h1 className={s.title}>Котлы на перегретой воде <br /> ICI CALDAIE</h1>
+              <h1 className={s.title}>
+                Котлы на перегретой воде <br /> ICI CALDAIE
+              </h1>
               <p className={s.subtitle}>Котлы серий ASX, ASGX EN</p>
               <p>Производительностью 170 - 17000 кВт</p>
             </div>
@@ -49,13 +54,14 @@ function steamBoilers() {
               <Link href="/catalog/vodogreinye-kotly">
                 <img
                   className={s.itemImg}
-                 src="/images/catalog/na-peregretoy-vode-kotly/ASGX.jpg"
+                  src="/images/catalog/na-peregretoy-vode-kotly/ASGX.jpg"
                 />
               </Link>
             </li>
           </ul>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
