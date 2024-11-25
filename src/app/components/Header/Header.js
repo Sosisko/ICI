@@ -50,7 +50,7 @@ function Header() {
             src="/images/logo.png"
             alt="Logo"
           />
-          <NavBar isVisible={isVisible}/>
+          <NavBar isVisible={isVisible} isSticky={isSticky}/>
         </div>
       </div>
     </header>

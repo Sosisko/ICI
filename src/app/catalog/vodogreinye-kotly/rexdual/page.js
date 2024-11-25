@@ -101,6 +101,17 @@ const rex = () => {
             <h2 className={s.descriptionTitle}>Технические данные</h2>
             <img src="/images/catalog/vodogreinye-kotly/rexdual/table.jpg" />
           </div>
+          <div className={s.descriptionBlock}>
+            <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>
+
+            <ul>
+              <li>- Блочный корпус с теплоизоляцией</li>
+              <li>- Турбулизаторы</li>
+              <li>- Щетка для чистки</li>
+              <li>- Гидравлические коллекторы подачи и обратки</li>
+              <li>- Комплект для гидравлического подключения котлов</li>
+            </ul>
+          </div>
         </div>
       </section>
       <Footer />

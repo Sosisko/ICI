@@ -6,7 +6,7 @@ import Link from "next/link";
 // Style
 import s from "./NavBar.module.css";
 
-function NavBar({isVisible}) {
+function NavBar({ isVisible, isSticky }) {
   const [showCatalogMenu, setShowCatalogMenu] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -38,13 +38,19 @@ function NavBar({isVisible}) {
           </Link>
         </li>
         <li
-          className={`${s.listItem} ${s.catalogLink} ${isVisible ? s.smallListItem : ""}`}
+          className={`${s.listItem} ${s.catalogLink} ${
+            isVisible ? s.smallListItem : ""
+          }`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           Каталог
           <span className={s.caret}></span>
-          <ul className={`${s.catalogMenu} ${showCatalogMenu ? s.show : ""}`}>
+          <ul
+            className={`${s.catalogMenu} ${showCatalogMenu ? s.show : ""} ${
+              isSticky ? s.smallTop : ""
+            }`}
+          >
             <li className={s.catalogMenuItem}>
               <Link href="/catalog/vodogreinye-kotly">Водогрейные котлы</Link>
             </li>

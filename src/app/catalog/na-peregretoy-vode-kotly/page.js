@@ -30,13 +30,13 @@ function steamBoilers() {
           <ul className={s.list}>
             <li className={s.item}>
               <div className={s.itemText}>
-                <Link href="#">
+                <Link  href="/catalog/na-peregretoy-vode-kotly/asx">
                   <h3 className={s.itemTitle}>Серия ASX</h3>
                 </Link>
                 <p>Расчетное давление 5, 12 бар</p>
                 <p>Полезная мощность 233 ÷ 3488 кВт</p>
               </div>
-              <Link href="/catalog/vodogreinye-kotly">
+              <Link href="/catalog/na-peregretoy-vode-kotly/asx">
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-peregretoy-vode-kotly/ASX.jpg"
@@ -45,13 +45,13 @@ function steamBoilers() {
             </li>
             <li className={s.item}>
               <div className={s.itemText}>
-                <Link href="#">
+                <Link href="/catalog/na-peregretoy-vode-kotly/asgx">
                   <h3 className={s.itemTitle}>Серия ASGX EN</h3>
                 </Link>
                 <p>Расчетное давление 12 бар</p>
                 <p>Полезная мощность 3000 ÷ 17000 кВт</p>
               </div>
-              <Link href="/catalog/vodogreinye-kotly">
+              <Link href="/catalog/na-peregretoy-vode-kotly/asgx">
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-peregretoy-vode-kotly/ASGX.jpg"

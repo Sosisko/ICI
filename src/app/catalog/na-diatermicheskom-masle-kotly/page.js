@@ -30,13 +30,13 @@ function thermalOilBoilers() {
           <ul className={s.list}>
             <li className={s.item}>
               <div className={s.itemText}>
-                <Link href="#">
+                <Link href="/catalog/na-diatermicheskom-masle-kotly/opx">
                   <h3 className={s.itemTitle}>Серия OPX</h3>
                 </Link>
                 <p>Расчетное давление 10 бар</p>
                 <p>Полезная мощность 116 ÷ 9302 кВт</p>
               </div>
-              <Link href="/catalog/vodogreinye-kotly">
+              <Link href="/catalog/na-diatermicheskom-masle-kotly/opx">
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-diatermicheskom-masle-kotly/OPX.jpg"
@@ -45,13 +45,13 @@ function thermalOilBoilers() {
             </li>
             <li className={s.item}>
               <div className={s.itemText}>
-                <Link href="#">
+                <Link href="/catalog/na-diatermicheskom-masle-kotly/opxrec">
                   <h3 className={s.itemTitle}>Серия OPX REC</h3>
                 </Link>
                 <p>Расчетное давление 10 бар</p>
                 <p>Полезная мощность 1163 ÷ 9302 кВт</p>
               </div>
-              <Link href="/catalog/vodogreinye-kotly">
+              <Link href="/catalog/na-diatermicheskom-masle-kotly/opxrec">
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-diatermicheskom-masle-kotly/OPXREC.jpg"
@@ -60,13 +60,13 @@ function thermalOilBoilers() {
             </li>
             <li className={s.item}>
               <div className={s.itemText}>
-                <Link href="#">
+                <Link href="/catalog/na-diatermicheskom-masle-kotly/evx">
                   <h3 className={s.itemTitle}>Серия EVX</h3>
                 </Link>
                 <p>Расчетное давление 12, 15 бар</p>
                 <p>Полезная мощность 233 ÷ 10465 кВт</p>
               </div>
-              <Link href="/catalog/vodogreinye-kotly">
+              <Link href="/catalog/na-diatermicheskom-masle-kotly/evx">
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-diatermicheskom-masle-kotly/EVX.jpg"
