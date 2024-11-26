@@ -1,3 +1,6 @@
+// Core
+import Link from "next/link";
+
 // Components
 import Footer from "../../../components/Footer/Footer";
 
@@ -13,6 +16,23 @@ const rex = () => {
             <div className={s.productContent}>
               <div className={s.productTextBlock}>
                 <div className={s.text}>
+                  <div className={s.breadcrumbs}>
+                    <ul>
+                      <li>
+                        <Link href="/">Главная</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog">Каталог</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog/parovye-kotly">Паровые котлы</Link>
+                      </li>
+                      <span>/</span>
+                      <li>Серия WHB</li>
+                    </ul>
+                  </div>
                   <h1 className={s.productTitle}>Паровые котлы WHB</h1>
                   <p className={s.productSubtitle}>
                     Расчетное давление 3 - 25 бар
@@ -25,7 +45,7 @@ const rex = () => {
               <div className={s.productImageBlock}>
                 <img
                   className={s.image}
-                  src="/images/catalog/parovye-kotly/whb.jpg"
+                  src="/images/catalog/parovye-kotly/WHB.jpg"
                   alt="Паровые котлы WHB"
                 />
               </div>

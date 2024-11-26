@@ -1,3 +1,6 @@
+// Core
+import Link from "next/link";
+
 // Components
 import Footer from "../../../components/Footer/Footer";
 
@@ -13,6 +16,23 @@ const rex = () => {
             <div className={s.productContent}>
               <div className={s.productTextBlock}>
                 <div className={s.text}>
+                  <div className={s.breadcrumbs}>
+                    <ul>
+                      <li>
+                        <Link href="/">Главная</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog">Каталог</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog/parovye-kotly">Паровые котлы</Link>
+                      </li>
+                      <span>/</span>
+                      <li>Серия SIXEN</li>
+                    </ul>
+                  </div>
                   <h1 className={s.productTitle}>Паровые котлы SIXEN</h1>
                   <p className={s.productSubtitle}>
                     Расчетное давление 3 - 25 бар
@@ -26,7 +46,7 @@ const rex = () => {
               <div className={s.productImageBlock}>
                 <img
                   className={s.image}
-                  src="/images/catalog/parovye-kotly/sixen.jpg"
+                  src="/images/catalog/parovye-kotly/SIXEN.jpg"
                   alt="Паровые котлы BX"
                 />
               </div>
@@ -119,16 +139,11 @@ const rex = () => {
 
             <h3 className={s.descriptionSubtitle}>Группа продувки днища</h3>
             <ul>
-              <li>- Отсечной клапан продувки проходной
-              </li>
-              <li>
-                - Клапан быстрого дренажа с наружной резьбой с рукояткой
-
-              </li>
+              <li>- Отсечной клапан продувки проходной</li>
+              <li>- Клапан быстрого дренажа с наружной резьбой с рукояткой</li>
             </ul>
             <h3 className={s.descriptionSubtitle}>
-            Автоматический регулятор уровня с датчиками проводимости
-
+              Автоматический регулятор уровня с датчиками проводимости
             </h3>
             <ul>
               <li>- Датчики пуска и останова насоса</li>

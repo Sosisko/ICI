@@ -14,6 +14,19 @@ function thermalOilBoilers() {
       <section className={s.thermalOilBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
+          <div className={s.breadcrumbs}>
+              <ul>
+                <li>
+                  <Link href="/">Главная</Link>
+                </li>
+                <span>/</span>
+                <li>
+                  <Link href="/catalog">Каталог</Link>
+                </li>
+                <span>/</span>
+                <li>Котлы на диатермическом масле</li>
+              </ul>
+            </div>
             <div className={s.text}>
               <h1 className={s.title}>
                 Котлы на диатермическом масле <br /> ICI CALDAIE

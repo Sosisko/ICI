@@ -1,3 +1,6 @@
+// Core
+import Link from "next/link";
+
 // Components
 import Footer from "../../../components/Footer/Footer";
 
@@ -13,6 +16,23 @@ const rex = () => {
             <div className={s.productContent}>
               <div className={s.productTextBlock}>
                 <div className={s.text}>
+                  <div className={s.breadcrumbs}>
+                    <ul>
+                      <li>
+                        <Link href="/">Главная</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog">Каталог</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog/parovye-kotly">Паровые котлы</Link>
+                      </li>
+                      <span>/</span>
+                      <li>Серия BNX</li>
+                    </ul>
+                  </div>
                   <h1 className={s.productTitle}>Паровые котлы BNX</h1>
                   <p className={s.productSubtitle}>
                     Расчетное давление 0,7 бар
@@ -26,7 +46,7 @@ const rex = () => {
               <div className={s.productImageBlock}>
                 <img
                   className={s.image}
-                  src="/images/catalog/parovye-kotly/bnx.jpg"
+                  src="/images/catalog/parovye-kotly/BNX.jpg"
                   alt="Паровые котлы BNX"
                 />
               </div>

@@ -48,7 +48,7 @@
 
 .title {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -166,15 +166,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 30px;
 }
+
 .productImageBlock {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .productTitle {
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 36px;
 }
 
 .productSubtitle {
@@ -212,4 +214,24 @@
 
 .descriptionBlock ul {
   margin-bottom: 10px;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs ul li {
+  margin-right: 10px;
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ul li:not(:first-child) {
+  margin-left: 10px;
 }

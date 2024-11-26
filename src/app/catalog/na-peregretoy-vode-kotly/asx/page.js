@@ -1,3 +1,6 @@
+// Core
+import Link from "next/link";
+
 // Components
 import Footer from "../../../components/Footer/Footer";
 
@@ -13,6 +16,25 @@ const rex = () => {
             <div className={s.productContent}>
               <div className={s.productTextBlock}>
                 <div className={s.text}>
+                  <div className={s.breadcrumbs}>
+                    <ul>
+                      <li>
+                        <Link href="/">Главная</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog">Каталог</Link>
+                      </li>
+                      <span>/</span>
+                      <li>
+                        <Link href="/catalog/na-peregretoy-vode-kotly">
+                          Котлы на перегретой воде
+                        </Link>
+                      </li>
+                      <span>/</span>
+                      <li>Серия ASX</li>
+                    </ul>
+                  </div>
                   <h1 className={s.productTitle}>
                     Котлы на перегретой воде ASX
                   </h1>

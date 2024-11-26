@@ -14,6 +14,19 @@ function steamBoilers() {
       <section className={s.superheatedWaterBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
+            <div className={s.breadcrumbs}>
+              <ul>
+                <li>
+                  <Link href="/">Главная</Link>
+                </li>
+                <span>/</span>
+                <li>
+                  <Link href="/catalog">Каталог</Link>
+                </li>
+                <span>/</span>
+                <li>Котлы на перегретой воде</li>
+              </ul>
+            </div>
             <div className={s.text}>
               <h1 className={s.title}>
                 Котлы на перегретой воде <br /> ICI CALDAIE
@@ -30,7 +43,7 @@ function steamBoilers() {
           <ul className={s.list}>
             <li className={s.item}>
               <div className={s.itemText}>
-                <Link  href="/catalog/na-peregretoy-vode-kotly/asx">
+                <Link href="/catalog/na-peregretoy-vode-kotly/asx">
                   <h3 className={s.itemTitle}>Серия ASX</h3>
                 </Link>
                 <p>Расчетное давление 5, 12 бар</p>

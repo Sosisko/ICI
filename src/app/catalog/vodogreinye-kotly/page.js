@@ -14,6 +14,19 @@ function hotWaterBoilers() {
       <section className={s.hotWaterBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
+            <div className={s.breadcrumbs}>
+              <ul>
+                <li>
+                  <Link href="/">Главная</Link>
+                </li>
+                <span>/</span>
+                <li>
+                  <Link href="/catalog">Каталог</Link>
+                </li>
+                <span>/</span>
+                <li>Водогрейные котлы</li>
+              </ul>
+            </div>
             <div className={s.text}>
               <h1 className={s.title}>
                 Водогрейные котлы <br /> ICI CALDAIE

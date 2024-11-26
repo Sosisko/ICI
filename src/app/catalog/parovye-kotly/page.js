@@ -14,6 +14,19 @@ function steamBoilers() {
       <section className={s.steamBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
+            <div className={s.breadcrumbs}>
+              <ul>
+                <li>
+                  <Link href="/">Главная</Link>
+                </li>
+                <span>/</span>
+                <li>
+                  <Link href="/catalog">Каталог</Link>
+                </li>
+                <span>/</span>
+                <li>Паровые котлы</li>
+              </ul>
+            </div>
             <div className={s.text}>
               <h1 className={s.title}>
                 Паровые котлы <br /> ICI CALDAIE
@@ -62,7 +75,7 @@ function steamBoilers() {
             </li>
             <li className={s.item}>
               <div className={s.itemText}>
-                <Link  href="/catalog/parovye-kotly/fx">
+                <Link href="/catalog/parovye-kotly/fx">
                   <h3 className={s.itemTitle}>Серия FX / FX DUAL</h3>
                 </Link>
                 <p>Расчетное давление 5 бар</p>
