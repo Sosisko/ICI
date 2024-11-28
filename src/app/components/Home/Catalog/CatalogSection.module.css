@@ -27,6 +27,7 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  box-shadow: 4px 0 14px 1px #223c5033;
 }
 
 .itemImg {

@@ -1,9 +1,16 @@
 "use client";
+// Core
+import { useRouter } from "next/navigation";
 
 // Styles
 import s from "./HeroSection.module.css";
 
 const HeroSection = () => {
+  const router = useRouter();
+  const toCatalogHandler = () => {
+    router.push("/catalog");
+  };
+
   return (
     <section className={s.heroSection}>
       <div className={s.wrapper}>
@@ -14,7 +21,7 @@ const HeroSection = () => {
           <p className={s.subTitle}>
             Отопительные решения, проверенные временем и опытом
           </p>
-          <button>Перейти в каталог</button>
+          <button onClick={toCatalogHandler}>Перейти в каталог</button>
         </div>
       </div>
     </section>

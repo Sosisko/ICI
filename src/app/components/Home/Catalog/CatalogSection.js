@@ -64,7 +64,7 @@ const CatalogSection = () => {
         </li>
         <li className={s.item}>
           <div className={s.itemText}>
-            <Link href="/catalog/na-masle-kotly">
+            <Link href="/catalog/na-diatermicheskom-masle-kotly">
               <h3 className={s.itemTitle}>Котлы на диатермическом масле</h3>
             </Link>
             <p className={s.itemSubtitle}>
@@ -72,7 +72,7 @@ const CatalogSection = () => {
               давлением до 10 бар.
             </p>
           </div>
-          <Link href="/catalog/na-masle-kotly">
+          <Link href="/catalog/na-diatermicheskom-masle-kotly">
             <img
               className={s.itemImg}
               src="/images/catalog/na-masle-kotly.jpg"

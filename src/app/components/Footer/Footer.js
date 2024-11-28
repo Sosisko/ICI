@@ -8,22 +8,22 @@ const Footer = () => {
       <div className="container">
         <div className={s.wrapper}>
           <div className={s.logo}>
-            <img src="/images/logo.png" alt="Logo" />
+            <img src="/images/logofooter.png" alt="Logo" />
           </div>
           <div className={s.footerCatalog}>
             <h2 className={s.title}>Каталог</h2>
             <ul>
               <li>
-                <a href="#">Водогрейные котлы</a>
+                <a href="/catalog/vodogreinye-kotly">Водогрейные котлы</a>
               </li>
               <li>
-                <a href="#">Паровые котлы</a>
+                <a href="/catalog/parovye-kotly">Паровые котлы</a>
               </li>
               <li>
-                <a href="#">Котлы на перегретой воде</a>
+                <a href="/catalog/na-peregretoy-vode-kotly">Котлы на перегретой воде</a>
               </li>
               <li>
-                <a href="#">Котлы на диатермическом масле</a>
+                <a href="/catalog/na-diatermicheskom-masle-kotly">Котлы на диатермическом масле</a>
               </li>
             </ul>
           </div>
@@ -32,11 +32,11 @@ const Footer = () => {
             <ul>
               <li className={s.footerContactsItem}>
                 <img src="/images/footer/phone.png" alt="phone" />
-                <a href="#">+7 (812) 123-45-67</a>
+                <a href="tel:+78121234567">+7 (812) 123-45-67</a>
               </li>
               <li className={s.footerContactsItem}>
                 <img src="/images/footer/mail.png" alt="phone" />
-                <a href="#">google@gmail.com</a>
+                <a href="mailto:google@gmail.com">google@gmail.com</a>
               </li>
             </ul>
           </div>

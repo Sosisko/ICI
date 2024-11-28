@@ -1,3 +1,20 @@
+.catalogPage {
+  background: url("/images/Merck1LOW-scaled.jpg") no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  color: var(--white-background);
+}
+
+.catalogWrapper {
+  background-color: #0d80ce96;
+  background: linear-gradient(90deg, #02b3f9 0%, #02b3f9e0 40%, #02b3f900 100%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .hotWaterBoilers {
   background: url("/images/catalog/vodogreinye-kotly/TNOXprincipale_2024-2048x1426.png")
     no-repeat;
@@ -25,6 +42,7 @@
   width: 100%;
   color: var(--white-background);
 }
+
 .steamBoilers {
   background: url("/images/catalog/parovye-kotly.jpg") no-repeat;
   background-position: 80% center;
@@ -40,6 +58,7 @@
   display: flex;
   align-items: center;
 }
+
 .textBlock {
   width: 1200px;
   margin: 0 auto;
@@ -81,6 +100,7 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  box-shadow: 4px 0px 14px 1px rgba(34, 60, 80, 0.2);
 }
 
 .itemText {
@@ -94,6 +114,8 @@
 
 .itemTitle {
   margin-bottom: 22px;
+  color: var(--light-blue);
+  transition: all 0.5s ease;
 }
 
 .itemTitle:hover {
