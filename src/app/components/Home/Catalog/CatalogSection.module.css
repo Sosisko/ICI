@@ -20,7 +20,7 @@
   position: relative;
   flex: 25%;
   background-color: var(--white-background);
-  padding: 30px;
+  padding: 20px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;

@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className={s.wrapper}>
         <div className={s.textBlock}>
           <h1 className={s.title}>
-            Официальный дилер котельного оборудования ICI CALDAIE в России
+            Официальный дилер котельного оборудования <br/> ICI CALDAIE в России
           </h1>
           <p className={s.subTitle}>
             Отопительные решения, проверенные временем и опытом

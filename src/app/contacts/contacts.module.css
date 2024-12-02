@@ -61,7 +61,6 @@
 
 .contactsSection {
   background: var(--light-gray);
-
 }
 
 .contactsServices {
@@ -89,6 +88,12 @@
   min-height: 200px;
 }
 
+.contactServicesLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .contactIcon {
   width: 40px;
 }
@@ -100,4 +105,65 @@
 .contactServiceItem a {
   font-weight: 700;
   font-size: 18px;
+}
+
+.contactServicesRight {
+  flex: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  background-color: var(--white-background);
+  box-shadow: rgba(34, 60, 80, 0.2) 4px 0px 14px 1px;
+  border-radius: 6px;
+}
+
+.fieldWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #02b3f9;
+  outline: none;
+}
+
+.submitButton {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #02b3f9;
+  cursor: pointer;
+  background-color: #02b3f9;
+  color: var(--white-background);
+  transition: all 0.2s ease;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  background-color: #02b3f9e0;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  bottom: -22px;
+}
+
+.inputError {
+  border: 1px solid red;
 }
