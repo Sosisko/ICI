@@ -103,7 +103,7 @@ function contactsPage() {
                     alt="phone"
                   />
                   <h3>Телефон</h3>
-                  <a href="tel:+7 (495) 123-45-67">+7 (495) 123-45-67</a>
+                  <a href="tel:+7 (982) 600-82-47">+7 (982) 600-82-47</a>
                 </div>
                 <div className={s.contactServiceItem}>
                   <img
@@ -112,7 +112,7 @@ function contactsPage() {
                     alt="mail"
                   />
                   <h3>Почта</h3>
-                  <a href="mailto:gZ9Yy@example.com">gZ9Yy@example.com</a>
+                  <a href="mailto:ici-rus@mail.ru">ici-rus@mail.ru</a>
                 </div>
               </div>
             </div>

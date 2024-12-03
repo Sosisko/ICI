@@ -32,11 +32,11 @@ const Footer = () => {
             <ul>
               <li className={s.footerContactsItem}>
                 <img src="/images/footer/phone.png" alt="phone" />
-                <a href="tel:+78121234567">+7 (812) 123-45-67</a>
+                <a href="tel:+7 (982) 600-82-47">+7 (982) 600-82-47</a>
               </li>
               <li className={s.footerContactsItem}>
                 <img src="/images/footer/mail.png" alt="phone" />
-                <a href="mailto:google@gmail.com">google@gmail.com</a>
+                <a href="mailto:ici-rus@mail.ru">ici-rus@mail.ru</a>
               </li>
             </ul>
           </div>
