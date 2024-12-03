@@ -7,8 +7,6 @@ import CatalogSection from "./components/Home/Catalog/CatalogSection";
 import InfoSection from "./components/Home/InfoSection/InfoSection";
 import Footer from "./components/Footer/Footer";
 
-// Styles
-import s from "./home.module.css";
 
 export default function Home() {
   return (

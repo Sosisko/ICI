@@ -10,11 +10,14 @@
   color: var(--gray);
 }
 
-
-
 .listItem {
   transition: all 0.2s ease;
   font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.listItem a {
   padding-top: 40px;
   padding-bottom: 40px;
 }

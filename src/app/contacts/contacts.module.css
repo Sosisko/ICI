@@ -65,7 +65,6 @@
 
 .contactsServices {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 80px;
   padding-bottom: 80px;
@@ -94,6 +93,13 @@
   gap: 20px;
 }
 
+.contactServiceList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 451px;
+}
+
 .contactIcon {
   width: 40px;
 }
@@ -109,6 +115,9 @@
 
 .contactServicesRight {
   flex: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .form {
@@ -129,7 +138,7 @@
 }
 
 .label {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   padding-left: 10px;
 }
@@ -137,16 +146,16 @@
 .input {
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #02b3f9;
+  border: 1px solid var(--blue);
   outline: none;
 }
 
 .submitButton {
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #02b3f9;
+  border: 1px solid var(--blue);
   cursor: pointer;
-  background-color: #02b3f9;
+  background-color: var(--blue);
   color: var(--white-background);
   transition: all 0.2s ease;
   width: 300px;
@@ -155,7 +164,7 @@
 }
 
 .submitButton:hover {
-  background-color: #02b3f9e0;
+  background-color: var(--dark-blue);
 }
 
 .error {
@@ -166,4 +175,26 @@
 
 .inputError {
   border: 1px solid red;
+}
+
+.loader {
+  margin: 0 auto;
+}
+
+.successMessage {
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.closeButton {
+  padding: 4px;
+  width: 200px;
+  margin-top: 10px;
 }
