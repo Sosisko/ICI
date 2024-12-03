@@ -1,0 +1,200 @@
+.contactsPage {
+  background: url("/images/GreenvitRzonka14low-scaled.jpg") no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  color: var(--white-background);
+}
+
+.wrapper {
+  background-color: #0d80ce96;
+  background: linear-gradient(90deg, #02b3f9 0%, #02b3f9e0 40%, #02b3f900 100%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.textBlock {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  max-width: 50%;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.descriptionBlock ul {
+  margin-bottom: 10px;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs ul li {
+  margin-right: 10px;
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ul li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.contactsSection {
+  background: var(--light-gray);
+}
+
+.contactsServices {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.contactServiceItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 20px;
+  box-shadow: rgba(34, 60, 80, 0.2) 4px 0px 14px 1px;
+  font-size: 18px;
+  padding: 40px;
+  border-radius: 6px;
+  background-color: var(--white-background);
+  color: var(--dark-blue);
+  min-height: 200px;
+}
+
+.contactServicesLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactServiceList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 451px;
+}
+
+.contactIcon {
+  width: 40px;
+}
+.contactServiceItem h3 {
+  font-size: 20px;
+  color: #595959;
+}
+
+.contactServiceItem a {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contactServicesRight {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  background-color: var(--white-background);
+  box-shadow: rgba(34, 60, 80, 0.2) 4px 0px 14px 1px;
+  border-radius: 6px;
+}
+
+.fieldWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--blue);
+  outline: none;
+}
+
+.submitButton {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--blue);
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--white-background);
+  transition: all 0.2s ease;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  background-color: var(--dark-blue);
+}
+
+.error {
+  position: absolute;
+  color: red;
+  bottom: -22px;
+}
+
+.inputError {
+  border: 1px solid red;
+}
+
+.loader {
+  margin: 0 auto;
+}
+
+.successMessage {
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.closeButton {
+  padding: 4px;
+  width: 200px;
+  margin-top: 10px;
+}

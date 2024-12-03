@@ -1,3 +1,5 @@
+"use client";
+
 // Styles
 
 import s from "./ServicesSection.module.css";
@@ -115,7 +117,7 @@ const ServicesSection = () => {
               </svg>
             </div>
             <div className={s.content}>
-              <h1 className={s.title}>Минимальные сроки доставки в РФ</h1>
+              <h1 className={s.title}>Минимальные сроки поставки в РФ</h1>
               <p className={s.subTitle}>
                 Крупнейший резерв на производственном складе
               </p>

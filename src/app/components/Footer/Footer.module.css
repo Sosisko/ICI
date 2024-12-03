@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: var(--white-background);
+  background: #082771 url("/images/footer/dotted-map-min.png") center center /
+    cover no-repeat scroll;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 78px;
+  height: 78px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.footerCatalog ul li,
+.footerContacts ul li {
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+.footerCatalog li:hover,
+.footerContacts li:hover {
+  color: var(--dark-blue);
+}
+
+.footerContactsItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerContactsItem img {
+  width: 24px;
+  height: 24px;
+}

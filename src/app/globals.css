@@ -6,15 +6,16 @@
   --light-gray: #f7f7f7;
   --blue: #016fb4;
   --dark-blue: #0d80ce;
+  --light-blue: #3f91c9;
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {
+  position: relative;
   color: var(--gray);
   background: var(--white-background);
   font-family: var(--font-montserrat-alternates);
