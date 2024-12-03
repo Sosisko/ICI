@@ -66,6 +66,10 @@
   transition: all 0.2s ease-in-out;
 }
 
+.catalogMenuItem a {
+  padding: 0;
+}
+
 .catalogMenuItem:hover {
   color: var(--dark-blue);
   cursor: pointer;
