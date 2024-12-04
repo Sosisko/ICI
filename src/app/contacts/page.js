@@ -8,6 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import InputMask from "@mona-health/react-input-mask";
 import { RiseLoader } from "react-spinners";
+
 // Components
 import Footer from "../components/Footer/Footer";
 
@@ -20,6 +21,7 @@ function contactsPage() {
   const [isSuccess, setIsSuccess] = useState(false);
 
   const form = useRef();
+
   const schema = yup.object({
     name: yup.string().required("Введите имя"),
     phone: yup
@@ -41,7 +43,6 @@ function contactsPage() {
   const onSubmit = () => {
     setIsLoading(true);
     setDisabled(true);
-    reset();
 
     emailjs
       .sendForm("service_o6d29x3", "template_wov24fo", form.current, {
@@ -49,13 +50,13 @@ function contactsPage() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          reset();
           setDisabled(false);
           setIsLoading(false);
           setIsSuccess(true);
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.error("FAILED...", error.text);
           setDisabled(false);
           setIsLoading(false);
           setIsSuccess(false);
@@ -125,8 +126,10 @@ function contactsPage() {
               >
                 <div className={s.fieldWrapper}>
                   <input
+                    disabled={disabled}
                     className={`${s.input} ${errors.name ? s.inputError : ""}`}
                     type="text"
+                    name="name"
                     {...register("name")}
                     placeholder="Ваше имя *"
                   />
@@ -135,6 +138,7 @@ function contactsPage() {
 
                 <div className={s.fieldWrapper}>
                   <Controller
+                    disabled={disabled}
                     control={control}
                     name="phone"
                     render={({ field }) => (
@@ -163,8 +167,10 @@ function contactsPage() {
 
                 <div className={s.fieldWrapper}>
                   <input
+                    disabled={disabled}
                     className={s.input}
                     type="email"
+                    name="email"
                     {...register("email")}
                     placeholder="Ваша почта "
                   />
@@ -173,6 +179,7 @@ function contactsPage() {
 
                 <div className={s.fieldWrapper}>
                   <textarea
+                    disabled={disabled}
                     style={{ maxWidth: "600px", height: "100px" }}
                     className={s.input}
                     name="message"
