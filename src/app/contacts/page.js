@@ -104,7 +104,7 @@ function contactsPage() {
                     alt="phone"
                   />
                   <h3>Телефон</h3>
-                  <a href="tel:+7 (982) 600-82-47">+7 (982) 600-82-47</a>
+                  <a href="tel:+7(982)6008247">+7 (982) 600-82-47</a>
                 </div>
                 <div className={s.contactServiceItem}>
                   <img
