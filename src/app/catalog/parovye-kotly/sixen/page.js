@@ -47,7 +47,7 @@ const rex = () => {
                 <img
                   className={s.image}
                   src="/images/catalog/parovye-kotly/SIXEN.jpg"
-                  alt="Паровые котлы BX"
+                  alt="Паровые котлы SIXEN"
                 />
               </div>
             </div>
@@ -113,7 +113,10 @@ const rex = () => {
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Технические данные</h2>
-            <img src="/images/catalog/parovye-kotly/sixen/table.jpg" />
+            <img
+              src="/images/catalog/parovye-kotly/sixen/table.jpg"
+              alt="Паровые котлы SIXEN"
+            />
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>

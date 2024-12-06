@@ -121,7 +121,10 @@ const rex = () => {
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Технические данные</h2>
-            <img src="/images/catalog/parovye-kotly/gsxp/table.jpg" />
+            <img
+              src="/images/catalog/parovye-kotly/gsxp/table.jpg"
+              alt="Паровые котлы GSX P"
+            />
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>
