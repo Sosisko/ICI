@@ -47,3 +47,21 @@
 .smallLogo {
   width: 50px;
 }
+
+@media screen and (max-width: 920px) {
+  .logo {
+    width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .headerContent {
+    justify-content: space-between;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white-background);
+    transition: top 0.3s ease-in-out;
+  }
+}

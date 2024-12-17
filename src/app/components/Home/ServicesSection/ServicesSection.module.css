@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .item img {
@@ -23,7 +24,7 @@
   border-radius: 6px;
   transition-duration: 0.5s;
   display: inline-block;
-  flex: 33.333%;
+  flex: calc(33.333% - 40px);
 }
 
 .item:hover {

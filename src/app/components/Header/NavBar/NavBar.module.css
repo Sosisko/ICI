@@ -93,3 +93,108 @@
   border-left: 4px solid transparent;
   margin-left: 4px;
 }
+
+.burger {
+  display: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  width: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.burgerLine {
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: var(--dark-blue);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.burgerLine:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: var(--dark-blue);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+  top: -8px;
+}
+
+.burgerLine:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: var(--dark-blue);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+  top: 8px;
+}
+
+.burger.open .burgerLine {
+  background: transparent;
+}
+
+.burger.open .burgerLine:before {
+  top: 0;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.burger.open .burgerLine:after {
+  top: 0;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.navMobile {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.showNavMobile {
+  display: block;
+  max-height: 500px;
+}
+
+.burgerList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.burgerListItem {
+  padding: 15px 20px;
+}
+
+.burgerListItem a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+@media screen and (max-width: 920px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
