@@ -21,7 +21,7 @@ const CatalogSection = () => {
             </div>
             <img
               className={s.itemImg}
-              src="/images/catalog/vodogreinye-kotly.jpg"
+              src="/images/catalog/vodogreinye-kotly.png"
             />
           </Link>
         </li>
