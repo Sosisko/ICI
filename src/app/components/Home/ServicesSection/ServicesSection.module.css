@@ -4,7 +4,7 @@
 
 .list {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
@@ -87,5 +87,34 @@
   }
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+  .servicesSection {
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 18px;
+  }
+  .subTitle {
+    font-size: 14px;
+  }
+  .iconWrapper {
+    width: 65px;
+    height: 60px;
+    margin: -30px 0 0 40px;
+  }
+  .iconWrapper  svg {
+    width: 40px;
+    height: 40px;
   }
 }

@@ -89,3 +89,32 @@
 .itemSubtitle {
   line-height: 1.3;
 }
+
+@media (max-width: 1400px) {
+  .catalogSection {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .list {
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: 50%;
+    max-width: calc(50% - 40px);
+  }
+}
+@media (max-width: 576px) {
+  .item {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .itemSubtitle {
+    font-size: 14px;
+  }
+ 
+}

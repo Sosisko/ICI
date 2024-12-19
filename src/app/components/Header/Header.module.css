@@ -58,10 +58,18 @@
     justify-content: space-between;
   }
   .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     background: var(--white-background);
     transition: top 0.3s ease-in-out;
+  }
+  .header.hidden {
+    top: 0;
+  }
+  .header.sticky {
+    position: fixed;
   }
 }

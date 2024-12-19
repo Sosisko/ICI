@@ -98,6 +98,20 @@ function NavBar({ isVisible, isSticky }) {
           </li>
           <li className={s.burgerListItem}>
             <Link href="/catalog" onClick={() => setIsOpenBurgerMenu(false)}>Каталог</Link>
+            <ul className={s.burgerCatalogMenu}>
+              <li className={s.burgerListItem}>
+                <Link href="/catalog/vodogreinye-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Водогрейные котлы</Link>
+              </li>
+              <li className={s.burgerListItem}>
+                <Link href="/catalog/parovye-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Паровые котлы</Link>
+              </li>
+              <li className={s.burgerListItem}>
+                <Link href="/catalog/na-peregretoy-vode-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Котлы на перегретой воде</Link>
+              </li>
+              <li className={s.burgerListItem}>
+                <Link href="/catalog/na-diatermicheskom-masle-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Котлы на диатермическом масле</Link>
+              </li>
+            </ul>
           </li>
           <li className={s.burgerListItem}>
             <Link href="/contacts" onClick={() => setIsOpenBurgerMenu(false)}>Контакты</Link>

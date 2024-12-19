@@ -181,13 +181,26 @@
 }
 
 .burgerListItem {
-  padding: 15px 20px;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 .burgerListItem a {
   text-decoration: none;
   color: black;
   display: block;
+  padding: 15px 20px;
+}
+
+.burgerCatalogMenu {
+  padding-left: 20px;
+}
+
+.burgerCatalogMenu li {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+.burgerCatalogMenu li a {
+  padding-left: 0;
 }
 
 @media screen and (max-width: 920px) {

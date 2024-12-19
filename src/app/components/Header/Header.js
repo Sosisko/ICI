@@ -36,7 +36,6 @@ function Header() {
     };
   }, []);
 
-
   return (
     <header
       className={`${s.header} ${isSticky ? s.sticky : ""} ${
@@ -50,7 +49,7 @@ function Header() {
             src="/images/logo.png"
             alt="Logo"
           />
-          <NavBar isVisible={isVisible} isSticky={isSticky}/>
+          <NavBar isVisible={isVisible} isSticky={isSticky} />
         </div>
       </div>
     </header>
