@@ -42,14 +42,13 @@
 @media (max-width: 920px) {
   .heroSection,
   .wrapper {
-    height: 100vh;
+    height: calc(100svh);
   }
   .title {
     font-size: 40px;
   }
 }
 @media (max-width: 576px) {
-
   .textBlock {
     max-width: 100%;
     padding-right: 40px;

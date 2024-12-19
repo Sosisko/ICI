@@ -22,7 +22,7 @@ const InfoSection = () => {
           </div>
 
           <div className={s.imgBlock}>
-            <img src="/images/IMG0080low.jpg" alt="infoSection" />
+            <img src="/images/info-section/ici-history.jpg" alt="ici-history" />
           </div>
         </div>
       </div>

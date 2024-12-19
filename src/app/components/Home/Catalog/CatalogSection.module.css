@@ -22,12 +22,16 @@
   background-color: var(--white-background);
   padding: 20px;
   border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 4px 0 14px 1px #223c5033;
+}
+
+.item a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
-  box-shadow: 4px 0 14px 1px #223c5033;
+  height: 100%;
 }
 
 .itemImg {
@@ -116,5 +120,7 @@
   .itemSubtitle {
     font-size: 14px;
   }
- 
+  .itemImg {
+    max-width: 200px;
+  }
 }

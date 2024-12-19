@@ -158,7 +158,7 @@
 .navMobile {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 0;
   right: 0;
   background: white;
@@ -186,7 +186,7 @@
 
 .burgerListItem a {
   text-decoration: none;
-  color: black;
+  color: var(--gray);
   display: block;
   padding: 15px 20px;
 }
@@ -196,9 +196,14 @@
 }
 
 .burgerCatalogMenu li {
-  list-style-type: circle;
+  list-style-type: disc;
   margin-left: 20px;
 }
+
+.burgerCatalogMenu li::marker {
+  color: var(--dark-blue);
+}
+
 .burgerCatalogMenu li a {
   padding-left: 0;
 }

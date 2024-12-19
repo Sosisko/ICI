@@ -1,7 +1,6 @@
 .infoSection {
   position: relative;
   padding: 80px 0;
-  background: #01337f url("/images/main-testimonial-bg.jpg") center center / cover;
   background-repeat: no-repeat;
   overflow: hidden;
 }
