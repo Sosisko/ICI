@@ -1,7 +1,7 @@
 .heroSection {
   display: flex;
   align-items: center;
-  background: url("/images/hero/banner.png") center center / cover no-repeat;
+  background: url("/images/hero/banner.webp") center center / cover no-repeat;
   height: calc(100vh - 100px);
   width: 100%;
 }

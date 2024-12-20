@@ -105,7 +105,7 @@ function infoPage() {
               </ul>
             </div>
             <div className={s.infoItem}>
-              <img className={s.infoItemImg} src="/images/info/info.jpg" />
+              <img className={s.infoItemImg} src="/images/info/info.webp" />
             </div>
           </div>
         </div>

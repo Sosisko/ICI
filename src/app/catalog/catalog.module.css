@@ -1,5 +1,5 @@
 .catalogPage {
-  background: url("/images/Merck1LOW-scaled.jpg") no-repeat;
+  background: url("/images/catalog/banner.webp") no-repeat;
   background-position: 100% 50%;
   background-size: cover;
   height: 400px;
@@ -16,7 +16,7 @@
 }
 
 .hotWaterBoilers {
-  background: url("/images/catalog/vodogreinye-kotly/TNOXprincipale_2024-2048x1426.png")
+  background: url("/images/catalog/vodogreinye-kotly/banner.webp")
     no-repeat;
   background-position: 80% center;
   background-size: contain;
@@ -26,7 +26,7 @@
 }
 
 .thermalOilBoilers {
-  background: url("/images/catalog/na-masle-kotly.jpg") no-repeat;
+  background: url("/images/catalog/na-masle-kotly.webp") no-repeat;
   background-position: 80% center;
   background-size: contain;
   height: 400px;
@@ -35,7 +35,7 @@
 }
 
 .superheatedWaterBoilers {
-  background: url("/images/catalog/na-peregretoy-vode-kotly.jpg") no-repeat;
+  background: url("/images/catalog/na-peregretoy-vode-kotly.webp") no-repeat;
   background-position: 80% center;
   background-size: contain;
   height: 400px;
@@ -44,7 +44,7 @@
 }
 
 .steamBoilers {
-  background: url("/images/catalog/parovye-kotly.jpg") no-repeat;
+  background: url("/images/catalog/parovye-kotly.webp") no-repeat;
   background-position: 80% center;
   background-size: contain;
   height: 400px;

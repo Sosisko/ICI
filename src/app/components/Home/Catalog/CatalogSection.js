@@ -21,7 +21,7 @@ const CatalogSection = () => {
             </div>
             <img
               className={s.itemImg}
-              src="/images/catalog/vodogreinye-kotly.png"
+              src="/images/catalog/vodogreinye-kotly.webp"
             />
           </Link>
         </li>
@@ -36,7 +36,7 @@ const CatalogSection = () => {
             </div>
             <img
               className={s.itemImg}
-              src="/images/catalog/parovye-kotly.jpg"
+              src="/images/catalog/parovye-kotly.webp"
             />
           </Link>
         </li>
@@ -52,7 +52,7 @@ const CatalogSection = () => {
             </div>
             <img
               className={s.itemImg}
-              src="/images/catalog/na-peregretoy-vode-kotly.jpg"
+              src="/images/catalog/na-peregretoy-vode-kotly.webp"
             />
           </Link>
         </li>
@@ -67,7 +67,7 @@ const CatalogSection = () => {
             </div>
             <img
               className={s.itemImg}
-              src="/images/catalog/na-masle-kotly.jpg"
+              src="/images/catalog/na-masle-kotly.webp"
             />
           </Link>
         </li>
