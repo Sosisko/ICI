@@ -87,11 +87,12 @@
   border-radius: 16px;
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
   .contentInfoWrapper {
     flex-direction: column;
   }
 }
+
 @media (max-width: 576px) {
   .wrapper {
     margin-top: 70px;
