@@ -22,6 +22,7 @@ const CatalogSection = () => {
             <img
               className={s.itemImg}
               src="/images/catalog/vodogreinye-kotly.webp"
+              alt="Водогрейные котлы ICI CALDAIE"
             />
           </Link>
         </li>
@@ -37,6 +38,7 @@ const CatalogSection = () => {
             <img
               className={s.itemImg}
               src="/images/catalog/parovye-kotly.webp"
+              alt="Паровые котлы ICI CALDAIE"
             />
           </Link>
         </li>
@@ -53,6 +55,7 @@ const CatalogSection = () => {
             <img
               className={s.itemImg}
               src="/images/catalog/na-peregretoy-vode-kotly.webp"
+              alt="Котлы на перегретой воде ICI CALDAIE"
             />
           </Link>
         </li>
@@ -68,6 +71,7 @@ const CatalogSection = () => {
             <img
               className={s.itemImg}
               src="/images/catalog/na-masle-kotly.webp"
+              alt="Котлы на диатермическом масле ICI CALDAIE"
             />
           </Link>
         </li>
@@ -77,4 +81,3 @@ const CatalogSection = () => {
 };
 
 export default CatalogSection;
-
