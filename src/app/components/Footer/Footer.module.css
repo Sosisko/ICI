@@ -1,6 +1,5 @@
 .footer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
   color: var(--white-background);
   background: #082771 url("/images/footer/dotted-map-min.png") center center /
     cover no-repeat scroll;
@@ -44,6 +43,9 @@
 }
 
 @media  (max-width: 768px) {
+  .footer {
+    padding: 60px 0;
+  }
   .wrapper {
     flex-direction: column;
     align-items: center;

@@ -257,3 +257,87 @@
 .breadcrumbs ul li:not(:first-child) {
   margin-left: 10px;
 }
+
+@media (max-width: 992px) {
+  .catalogSection {
+    padding: 40px;
+  }
+}
+@media (max-width: 920px) {
+  .wrapper {
+    margin-top: 70px;
+  }
+  .hotWaterBoilers,
+  .steamBoilers,
+  .superheatedWaterBoilers,
+  .thermalOilBoilers {
+    height: 300px;
+  }
+  .productContent {
+    margin-top: 70px;
+  }
+  .breadcrumbs {
+    font-size: 14px;
+  }
+  .breadcrumbs ul li:not(:first-child) {
+    margin-left: 6px;
+  }
+  .breadcrumbs ul li {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+}
+@media (max-width: 850px) {
+  .item {
+    flex: 50%;
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .catalogSection {
+    padding: 20px;
+  }
+  .catalogWrapper {
+    margin-top: 70px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .catalogPage {
+    height: 300px;
+  }
+  .breadcrumbs ul li {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  .breadcrumbs ul li:not(:first-child) {
+    margin-right: 4px;
+  }
+  .breadcrumbs ul li:not(:first-child) {
+    margin-left: 4px;
+  }
+  .item {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .itemImg {
+    max-width: 200px;
+  }
+  .productContent {
+    flex-direction: column;
+  }
+  .productTitle {
+    text-align: center;
+    font-size: 22px;
+  }
+  .productSubtitle {
+    font-size: 16px;
+  }
+  .descriptionTitle {
+    font-size: 22px;
+  }
+  .productImageBlock {
+    max-width: 60%;
+  }
+}

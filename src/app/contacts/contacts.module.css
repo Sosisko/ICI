@@ -115,6 +115,7 @@
 
 .contactServicesRight {
   flex: 50%;
+  max-width: calc(50% - 20px);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -197,4 +198,69 @@
   padding: 4px;
   width: 200px;
   margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .contactsServices {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactServicesRight {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .contactServicesLeft,
+  .contactServicesRight {
+    width: 50%;
+  }
+  .contactServicesLeft h2,
+  .contactServicesRight h2 {
+    text-align: center;
+  }
+  .contactServiceItem {
+    width: 100%;
+  }
+  .submitButton {
+    width: 100%;
+  }
+}
+@media (max-width: 920px) {
+  .wrapper {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    max-width: 100%;
+  }
+  .contactServicesLeft,
+  .contactServicesRight {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .contactsPage {
+    height: 300px;
+  }
+  .contactServicesLeft,
+  .contactServicesRight {
+    width: 100%;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .breadcrumbs ul li {
+    font-size: 14px;
+  }
+  .contactServicesLeft h2,
+  .contactServicesRight h2 {
+    font-size: 22px;
+  }
+  .successMessage p {
+    font-size: 14px;
+  }
 }
