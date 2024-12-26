@@ -1,6 +1,7 @@
 "use client";
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import CatalogSection from "../components/Home/Catalog/CatalogSection";
@@ -12,6 +13,12 @@ import s from "./catalog.module.css";
 function infoPage() {
   return (
     <>
+      <Head>
+        <title>Каталог - ICI Caldaie</title>
+        <meta name="description" content="Каталог котлов ICI Caldaie" />
+        <meta name="keywords" content="ICI Caldaie, котлы, каталог" />
+        <meta property="og:title" content="Каталог - ICI Caldaie" />
+      </Head>
       <section className={s.catalogPage}>
         <div className={s.catalogWrapper}>
           <div className={s.textBlock}>
@@ -26,7 +33,7 @@ function infoPage() {
             </div>
             <div className={s.text}>
               <h1 className={s.title}>
-                Каталог котельного <br/> оборудования ICI CALDAIE
+                Каталог котельного <br /> оборудования ICI CALDAIE
               </h1>
               <p className={s.subtitle}>
                 Сердце, которое уже более 60 лет бьется в своем стремлении к

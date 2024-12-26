@@ -1,6 +1,7 @@
 "use client";
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../../components/Footer/Footer";
@@ -11,6 +12,21 @@ import s from "../catalog.module.css";
 function thermalOilBoilers() {
   return (
     <>
+      <Head>
+        <title>Котлы на диатермическом масле - ICI Caldaie</title>
+        <meta
+          name="description"
+          content="Каталог котлов ICI Caldaie, котлы на диатермическом масле"
+        />
+        <meta
+          name="keywords"
+          content="ICI Caldaie, котлы, котлы на диатермическом масле"
+        />
+        <meta
+          property="og:title"
+          content="Котлы на диатермическом масле - ICI Caldaie"
+        />
+      </Head>
       <section className={s.thermalOilBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
@@ -53,6 +69,7 @@ function thermalOilBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-diatermicheskom-masle-kotly/OPX.jpg"
+                  alt="Котлы на диатермическом масле (ВОТ) OPX"
                 />
               </Link>
             </li>
@@ -68,6 +85,7 @@ function thermalOilBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-diatermicheskom-masle-kotly/OPXREC.jpg"
+                  alt="Котлы на диатермическом масле (ВОТ) OPX REC"
                 />
               </Link>
             </li>
@@ -83,6 +101,7 @@ function thermalOilBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-diatermicheskom-masle-kotly/EVX.jpg"
+                  alt="Котлы на диатермическом масле (ВОТ) EVX"
                 />
               </Link>
             </li>

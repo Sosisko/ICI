@@ -33,6 +33,7 @@
 
 .logo {
   width: 78px;
+  display: block;
 }
 
 .visible {

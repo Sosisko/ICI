@@ -26,14 +26,15 @@ const raleway = Raleway({
 export const metadata = {
   title: "ICI Caldaie | Официальный дилер в России",
   description: "Котельное оборудование ICI Caldaie",
-  keywords: "ICI Caldaie, дилер, Россия, котлы",
+  keywords:
+    "ICI Caldaie, ici, ici котлы, итальянские паровые котлы, котел ici, ичи котлы, котел ici caldaie, котлы rex, ici caldaie официальный сайт, ici caldaie, ici rex, котел rex, паровые котлы, sixen, котлы sixen, паровой котел sixen",
   author: "ICI Caldaie",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ru" className={play.className}>
-       <Head>
+      <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>

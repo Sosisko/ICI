@@ -1,5 +1,6 @@
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../../../components/Footer/Footer";
@@ -10,6 +11,17 @@ import s from "../../catalog.module.css";
 const rex = () => {
   return (
     <>
+      <Head>
+        <title>Котлы на перегретой воде ASGX EN - ICI Caldaie</title>
+        <meta
+          name="description"
+          content="Каталог котлов ICI Caldaie, котлы на перегретой воде ASGX EN"
+        />
+        <meta
+          name="keywords"
+          content="ICI Caldaie, котлы, котлы на перегретой воде ASGX EN"
+        />
+      </Head>
       <section className={s.productBannerSection}>
         <div className={s.productWrapper}>
           <div className="container">
@@ -106,7 +118,10 @@ const rex = () => {
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Технические данные</h2>
-            <img src="/images/catalog/na-peregretoy-vode-kotly/asgx/table.jpg" />
+            <img
+              src="/images/catalog/na-peregretoy-vode-kotly/asgx/table.jpg"
+              alt="Технические данные"
+            />
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>

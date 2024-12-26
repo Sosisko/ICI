@@ -1,7 +1,9 @@
 "use client";
 
 // Core
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
+import Link from "next/link";
+
 
 // Components
 import NavBar from "./NavBar/NavBar";
@@ -44,11 +46,13 @@ function Header() {
     >
       <div className="container">
         <div className={s.headerContent}>
-          <img
-            className={`${s.logo} ${isVisible ? s.smallLogo : ""}`}
-            src="/images/logo.png"
-            alt="Logo"
-          />
+          <Link href="/">
+            <img
+              className={`${s.logo} ${isVisible ? s.smallLogo : ""}`}
+              src="/images/logo.png"
+              alt="ICI CALDAIE logo"
+            />
+          </Link>
           <NavBar isVisible={isVisible} isSticky={isSticky} />
         </div>
       </div>

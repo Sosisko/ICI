@@ -8,6 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import InputMask from "@mona-health/react-input-mask";
 import { RiseLoader } from "react-spinners";
+import Head from "next/head";
 
 // Components
 import Footer from "../components/Footer/Footer";
@@ -66,6 +67,17 @@ function contactsPage() {
 
   return (
     <>
+      <Head>
+        <title>Контакты - ICI CALDAIE</title>
+        <meta
+          name="description"
+          content="Свяжитесь с нами для получения информации о сертификатах, характеристиках, стоимости и наличии оборудования ICI CALDAIE."
+        />
+        <meta
+          name="keywords"
+          content="контакты, ICI CALDAIE, оборудование, сертификаты"
+        />
+      </Head>
       <section className={s.contactsPage}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>

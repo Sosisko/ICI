@@ -1,6 +1,7 @@
 "use client";
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../../components/Footer/Footer";
@@ -11,6 +12,15 @@ import s from "../catalog.module.css";
 function steamBoilers() {
   return (
     <>
+      <Head>
+        <title>Паровые котлы - ICI Caldaie</title>
+        <meta
+          name="description"
+          content="Каталог котлов ICI Caldaie, паровые котлы"
+        />
+        <meta name="keywords" content="ICI Caldaie, котлы, паровые котлы" />
+        <meta property="og:title" content="Паровые котлы - ICI Caldaie" />
+      </Head>
       <section className={s.steamBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
@@ -55,7 +65,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/BX.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы BX"
                 />
               </Link>
             </li>
@@ -71,7 +81,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/BNX.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы BNX"
                 />
               </Link>
             </li>
@@ -87,7 +97,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/FX.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы FX"
                 />
               </Link>
             </li>
@@ -103,7 +113,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/SIXEN.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы SIXEN"
                 />
               </Link>
             </li>
@@ -119,7 +129,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/GSX.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы GSX"
                 />
               </Link>
             </li>
@@ -135,7 +145,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/GSX.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы GSX P"
                 />
               </Link>
             </li>
@@ -151,7 +161,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/GX.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы GX"
                 />
               </Link>
             </li>
@@ -167,7 +177,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/GXS.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы GX S"
                 />
               </Link>
             </li>
@@ -183,7 +193,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/GXC.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы GX C"
                 />
               </Link>
             </li>
@@ -199,7 +209,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/parovye-kotly/WHB.jpg"
-                  alt="Паровые котлы ICI CALDAIE"
+                  alt="Паровые котлы WHB"
                 />
               </Link>
             </li>

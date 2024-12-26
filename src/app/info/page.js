@@ -1,6 +1,7 @@
 "use client";
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../components/Footer/Footer";
@@ -11,6 +12,13 @@ import s from "./info.module.css";
 function infoPage() {
   return (
     <>
+    <Head>
+        <title>О производстве - ICI Caldaie</title>
+        <meta name="description" content="Узнайте о компании ICI Caldaie, ее истории и достижениях в производстве котлов." /> 
+        <meta name="keywords" content="ICI Caldaie, котлы, история компании, производство" />
+        <meta property="og:title" content="О производстве - ICI Caldaie" />
+        <meta property="og:description" content="Узнайте о компании ICI Caldaie, ее истории и достижениях в производстве котлов." />
+      </Head>
       <section className={s.infoPage}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
@@ -19,7 +27,7 @@ function infoPage() {
                 <li>
                   <Link href="/">Главная</Link>
                 </li>
-                <span>/</span>
+                /
                 <li>О производстве</li>
               </ul>
             </div>
@@ -81,10 +89,6 @@ function infoPage() {
                   </p>
                 </li>
                 <li>
-                  <h4></h4>
-                  <p></p>
-                </li>
-                <li>
                   <h4>2014-2015</h4>
                   <p>
                     Открыта дверь в мир IoT. Подключение установок к сети
@@ -105,7 +109,7 @@ function infoPage() {
               </ul>
             </div>
             <div className={s.infoItem}>
-              <img className={s.infoItemImg} src="/images/info/info.webp" />
+              <img className={s.infoItemImg} src="/images/info/info.webp" alt="ICI info" />
             </div>
           </div>
         </div>

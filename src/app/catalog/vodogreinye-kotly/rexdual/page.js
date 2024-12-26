@@ -1,5 +1,6 @@
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../../../components/Footer/Footer";
@@ -10,6 +11,21 @@ import s from "../../catalog.module.css";
 const rex = () => {
   return (
     <>
+      <Head>
+        <title>Водогрейные котлы REX DUAL и REX DUAL F - ICI Caldaie</title>
+        <meta
+          name="description"
+          content="Каталог котлов ICI Caldaie, водогрейные котлы REX DUAL и REX DUAL F"
+        />
+        <meta
+          name="keywords"
+          content="ICI Caldaie, котлы, водогрейные котлы REX DUAL и REX DUAL F"
+        />
+        <meta
+          property="og:title"
+          content="Водогрейные котлы REX DUAL и REX DUAL F - ICI Caldaie"
+        />
+      </Head>
       <section className={s.productBannerSection}>
         <div className={s.productWrapper}>
           <div className="container">
@@ -36,7 +52,7 @@ const rex = () => {
                     </ul>
                   </div>
                   <h1 className={s.productTitle}>
-                    Водогрейные котлы <br/> REX DUAL и REX DUAL F
+                    Водогрейные котлы <br /> REX DUAL и REX DUAL F
                   </h1>
                   <p className={s.productSubtitle}>Расчетное давление 5 бар</p>
                   <p className={s.productSubtitle}>
@@ -121,7 +137,10 @@ const rex = () => {
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Технические данные</h2>
-            <img src="/images/catalog/vodogreinye-kotly/rexdual/table.jpg" />
+            <img
+              src="/images/catalog/vodogreinye-kotly/rexdual/table.jpg"
+              alt="Технические данные"
+            />
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>

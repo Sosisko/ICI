@@ -1,6 +1,7 @@
 "use client";
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../../components/Footer/Footer";
@@ -11,6 +12,15 @@ import s from "../catalog.module.css";
 function hotWaterBoilers() {
   return (
     <>
+      <Head>
+        <title>Водогрейные котлы - ICI Caldaie</title>
+        <meta
+          name="description"
+          content="Каталог котлов ICI Caldaie, водогрейные котлы"
+        />
+        <meta name="keywords" content="ICI Caldaie, котлы, водогрейные котлы" />
+        <meta property="og:title" content="Водогрейные котлы - ICI Caldaie" />
+      </Head>
       <section className={s.hotWaterBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
@@ -55,6 +65,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/rex.jpg"
+                  alt="Водогрейные котлы REX"
                 />
               </Link>
             </li>
@@ -70,6 +81,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/rex-dual.jpg"
+                  alt="Водогрейные котлы REX DUAL"
                 />
               </Link>
             </li>
@@ -85,6 +97,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/greenox.jpg"
+                  alt="Водогрейные котлы GREENOX"
                 />
               </Link>
             </li>
@@ -100,6 +113,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/TNOX.jpg"
+                  alt="Водогрейные котлы TNX"
                 />
               </Link>
             </li>
@@ -115,6 +129,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/TNOX.jpg"
+                  alt="Водогрейные котлы TNOX"
                 />
               </Link>
             </li>
@@ -130,6 +145,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/TNOX.jpg"
+                  alt="Водогрейные котлы TNOX.e"
                 />
               </Link>
             </li>
@@ -145,6 +161,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/TNOXCOND.jpg"
+                  alt="Водогрейные котлы TNOX BT COND"
                 />
               </Link>
             </li>
@@ -160,6 +177,7 @@ function hotWaterBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/vodogreinye-kotly/TNOX.jpg"
+                  alt="Водогрейные котлы TNOX S"
                 />
               </Link>
             </li>

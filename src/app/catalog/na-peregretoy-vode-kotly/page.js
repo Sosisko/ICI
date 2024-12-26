@@ -1,6 +1,7 @@
 "use client";
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../../components/Footer/Footer";
@@ -11,6 +12,21 @@ import s from "../catalog.module.css";
 function steamBoilers() {
   return (
     <>
+      <Head>
+        <title>Котлы на перегретой воде - ICI Caldaie</title>
+        <meta
+          name="description"
+          content="Каталог котлов ICI Caldaie, котлы на перегретой воде"
+        />
+        <meta
+          name="keywords"
+          content="ICI Caldaie, котлы, котлы на перегретой воде"
+        />
+        <meta
+          property="og:title"
+          content="Котлы на перегретой воде - ICI Caldaie"
+        />
+      </Head>
       <section className={s.superheatedWaterBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
@@ -53,6 +69,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-peregretoy-vode-kotly/ASX.jpg"
+                  alt="Котлы на перегретой воде ASX"
                 />
               </Link>
             </li>
@@ -68,6 +85,7 @@ function steamBoilers() {
                 <img
                   className={s.itemImg}
                   src="/images/catalog/na-peregretoy-vode-kotly/ASGX.jpg"
+                  alt="Котлы на перегретой воде ASGX EN"
                 />
               </Link>
             </li>

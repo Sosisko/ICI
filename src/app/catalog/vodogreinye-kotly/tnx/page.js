@@ -1,5 +1,6 @@
 // Core
 import Link from "next/link";
+import Head from "next/head";
 
 // Components
 import Footer from "../../../components/Footer/Footer";
@@ -10,6 +11,21 @@ import s from "../../catalog.module.css";
 const rex = () => {
   return (
     <>
+      <Head>
+        <title>Водогрейные котлы TNX / TNX EN - ICI Caldaie</title>
+        <meta
+          name="description"
+          content="Каталог котлов ICI Caldaie, водогрейные котлы TNX / TNX EN"
+        />
+        <meta
+          name="keywords"
+          content="ICI Caldaie, котлы, водогрейные котлы TNX / TNX EN"
+        />
+        <meta
+          property="og:title"
+          content="Водогрейные котлы TNX / TNX EN - ICI Caldaie"
+        />
+      </Head>
       <section className={s.productBannerSection}>
         <div className={s.productWrapper}>
           <div className="container">
@@ -119,7 +135,10 @@ const rex = () => {
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Технические данные</h2>
-            <img src="/images/catalog/vodogreinye-kotly/tnx/table.jpg" />
+            <img
+              src="/images/catalog/vodogreinye-kotly/tnx/table.jpg"
+              alt="Технические данные"
+            />
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>
