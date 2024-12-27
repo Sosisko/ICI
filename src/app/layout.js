@@ -29,6 +29,9 @@ export const metadata = {
   keywords:
     "ICI Caldaie, ici, ici котлы, итальянские паровые котлы, котел ici, ичи котлы, котел ici caldaie, котлы rex, ici caldaie официальный сайт, ici caldaie, ici rex, котел rex, паровые котлы, sixen, котлы sixen, паровой котел sixen",
   author: "ICI Caldaie",
+  alternates : {
+    cannonical: 'https://ici-rus.com',
+  }
 };
 
 export default function RootLayout({ children }) {
