@@ -1,15 +1,21 @@
 "use client";
 // Core
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 // Style
 import s from "./NavBar.module.css";
 
-function NavBar({ isVisible, isSticky }) {
+function NavBar({
+  isVisible,
+  isSticky,
+  isOpenBurgerMenu,
+  setIsOpenBurgerMenu,
+}) {
   const [showCatalogMenu, setShowCatalogMenu] = useState(false);
-  const [isOpenBurgerMenu, setIsOpenBurgerMenu] = useState(false);
   const timeoutRef = useRef(null);
+  const navMobileRef = useRef(null);
+  const burgerRef = useRef(null);
 
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current);
@@ -25,8 +31,26 @@ function NavBar({ isVisible, isSticky }) {
     }, 100);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        navMobileRef.current &&
+        !navMobileRef.current.contains(event.target) &&
+        burgerRef.current &&
+        !burgerRef.current.contains(event.target)
+      ) {
+        setIsOpenBurgerMenu(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [setIsOpenBurgerMenu]);
+
   return (
     <>
+      {isOpenBurgerMenu && <div className={s.overlay}></div>}
       <nav className={s.nav}>
         <ul className={`${s.list}`}>
           <li className={`${s.listItem} ${isVisible ? s.smallListItem : ""}`}>
@@ -80,6 +104,7 @@ function NavBar({ isVisible, isSticky }) {
       </nav>
 
       <div
+        ref={burgerRef}
         className={`${s.burger} ${isOpenBurgerMenu ? s.open : ""}`}
         onClick={() => setIsOpenBurgerMenu(!isOpenBurgerMenu)}
       >
@@ -87,34 +112,63 @@ function NavBar({ isVisible, isSticky }) {
       </div>
 
       <nav
+        ref={navMobileRef}
         className={`${s.navMobile} ${isOpenBurgerMenu ? s.showNavMobile : ""}`}
       >
         <ul className={s.burgerList}>
           <li className={s.burgerListItem}>
-            <Link href="/" onClick={() => setIsOpenBurgerMenu(false)}>Главная</Link>
+            <Link href="/" onClick={() => setIsOpenBurgerMenu(false)}>
+              Главная
+            </Link>
           </li>
           <li className={s.burgerListItem}>
-            <Link href="/info" onClick={() => setIsOpenBurgerMenu(false)}>О производстве</Link>
+            <Link href="/info" onClick={() => setIsOpenBurgerMenu(false)}>
+              О производстве
+            </Link>
           </li>
           <li className={s.burgerListItem}>
-            <Link href="/catalog" onClick={() => setIsOpenBurgerMenu(false)}>Каталог</Link>
+            <Link href="/catalog" onClick={() => setIsOpenBurgerMenu(false)}>
+              Каталог
+            </Link>
             <ul className={s.burgerCatalogMenu}>
               <li className={s.burgerListItem}>
-                <Link href="/catalog/vodogreinye-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Водогрейные котлы</Link>
+                <Link
+                  href="/catalog/vodogreinye-kotly"
+                  onClick={() => setIsOpenBurgerMenu(false)}
+                >
+                  Водогрейные котлы
+                </Link>
               </li>
               <li className={s.burgerListItem}>
-                <Link href="/catalog/parovye-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Паровые котлы</Link>
+                <Link
+                  href="/catalog/parovye-kotly"
+                  onClick={() => setIsOpenBurgerMenu(false)}
+                >
+                  Паровые котлы
+                </Link>
               </li>
               <li className={s.burgerListItem}>
-                <Link href="/catalog/na-peregretoy-vode-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Котлы на перегретой воде</Link>
+                <Link
+                  href="/catalog/na-peregretoy-vode-kotly"
+                  onClick={() => setIsOpenBurgerMenu(false)}
+                >
+                  Котлы на перегретой воде
+                </Link>
               </li>
               <li className={s.burgerListItem}>
-                <Link href="/catalog/na-diatermicheskom-masle-kotly" onClick={() => setIsOpenBurgerMenu(false)}>Котлы на диатермическом масле</Link>
+                <Link
+                  href="/catalog/na-diatermicheskom-masle-kotly"
+                  onClick={() => setIsOpenBurgerMenu(false)}
+                >
+                  Котлы на диатермическом масле
+                </Link>
               </li>
             </ul>
           </li>
           <li className={s.burgerListItem}>
-            <Link href="/contacts" onClick={() => setIsOpenBurgerMenu(false)}>Контакты</Link>
+            <Link href="/contacts" onClick={() => setIsOpenBurgerMenu(false)}>
+              Контакты
+            </Link>
           </li>
         </ul>
       </nav>

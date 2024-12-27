@@ -1,7 +1,5 @@
-"use client";
 // Core
 import Link from "next/link";
-import Head from "next/head";
 
 // Components
 import Footer from "../../components/Footer/Footer";
@@ -9,18 +7,15 @@ import Footer from "../../components/Footer/Footer";
 // Styles
 import s from "../catalog.module.css";
 
+export const metadata = {
+  title: "Паровые котлы - ICI Caldaie",
+  description: "Каталог котлов ICI Caldaie, паровые котлы",
+  keywords: "ICI Caldaie, котлы, паровые котлы",
+};
+
 function steamBoilers() {
   return (
     <>
-      <Head>
-        <title>Паровые котлы - ICI Caldaie</title>
-        <meta
-          name="description"
-          content="Каталог котлов ICI Caldaie, паровые котлы"
-        />
-        <meta name="keywords" content="ICI Caldaie, котлы, паровые котлы" />
-        <meta property="og:title" content="Паровые котлы - ICI Caldaie" />
-      </Head>
       <section className={s.steamBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>

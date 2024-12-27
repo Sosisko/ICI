@@ -1,6 +1,5 @@
 // Core
 import Link from "next/link";
-import Head from "next/head";
 
 // Components
 import Footer from "../../../components/Footer/Footer";
@@ -8,24 +7,15 @@ import Footer from "../../../components/Footer/Footer";
 // Style
 import s from "../../catalog.module.css";
 
+export const metadata = {
+  title: "Водогрейные котлы REX и REX F - ICI Caldaie",
+  description: "Каталог котлов ICI Caldaie, водогрейные котлы REX и REX F",
+  keywords: "ICI Caldaie, котлы, водогрейные котлы REX и REX F",
+};
+
 const rex = () => {
   return (
     <>
-      <Head>
-        <title>Водогрейные котлы REX и REX F - ICI Caldaie</title>
-        <meta
-          name="description"
-          content="Каталог котлов ICI Caldaie, водогрейные котлы REX и REX F"
-        />
-        <meta
-          name="keywords"
-          content="ICI Caldaie, котлы, водогрейные котлы REX и REX F"
-        />
-        <meta
-          property="og:title"
-          content="Водогрейные котлы REX и REX F - ICI Caldaie"
-        />
-      </Head>
       <section className={s.productBannerSection}>
         <div className={s.productWrapper}>
           <div className="container">
@@ -141,7 +131,10 @@ const rex = () => {
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Технические данные</h2>
-            <img src="/images/catalog/vodogreinye-kotly/rex/table.jpg" alt="Технические данные" />
+            <img
+              src="/images/catalog/vodogreinye-kotly/rex/table.jpg"
+              alt="Технические данные"
+            />
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>

@@ -7,7 +7,6 @@ import CatalogSection from "./components/Home/Catalog/CatalogSection";
 import InfoSection from "./components/Home/InfoSection/InfoSection";
 import Footer from "./components/Footer/Footer";
 
-
 export default function Home() {
   return (
     <>

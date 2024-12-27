@@ -1,6 +1,5 @@
 // Core
 import Link from "next/link";
-import Head from "next/head";
 
 // Components
 import Footer from "../../../components/Footer/Footer";
@@ -8,24 +7,15 @@ import Footer from "../../../components/Footer/Footer";
 // Style
 import s from "../../catalog.module.css";
 
+export const metadata = {
+  title: "Паровые котлы FX / FX DUAL - ICI Caldaie",
+  description: "Каталог котлов ICI Caldaie, паровые котлы FX / FX DUAL",
+  keywords: "ICI Caldaie, котлы, паровые котлы FX / FX DUAL",
+}
+
 const rex = () => {
   return (
     <>
-      <Head>
-        <title>Паровые котлы FX / FX DUAL - ICI Caldaie</title>
-        <meta
-          name="description"
-          content="Каталог котлов ICI Caldaie, паровые котлы FX / FX DUAL"
-        />
-        <meta
-          name="keywords"
-          content="ICI Caldaie, котлы, паровые котлы FX / FX DUAL"
-        />
-        <meta
-          property="og:title"
-          content="Паровые котлы FX / FX DUAL - ICI Caldaie"
-        />
-      </Head>
       <section className={s.productBannerSection}>
         <div className={s.productWrapper}>
           <div className="container">

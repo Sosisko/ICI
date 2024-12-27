@@ -1,7 +1,5 @@
-"use client";
 // Core
 import Link from "next/link";
-import Head from "next/head";
 
 // Components
 import Footer from "../components/Footer/Footer";
@@ -9,16 +7,15 @@ import Footer from "../components/Footer/Footer";
 // Styles
 import s from "./info.module.css";
 
+export const metadata = {
+  title: "О производстве - ICI Caldaie",
+  description: "Узнайте о компании ICI Caldaie, ее истории и достижениях в производстве котлов.",
+  keywords: "ICI Caldaie, котлы, история компании, производство",
+};
+
 function infoPage() {
   return (
     <>
-    <Head>
-        <title>О производстве - ICI Caldaie</title>
-        <meta name="description" content="Узнайте о компании ICI Caldaie, ее истории и достижениях в производстве котлов." /> 
-        <meta name="keywords" content="ICI Caldaie, котлы, история компании, производство" />
-        <meta property="og:title" content="О производстве - ICI Caldaie" />
-        <meta property="og:description" content="Узнайте о компании ICI Caldaie, ее истории и достижениях в производстве котлов." />
-      </Head>
       <section className={s.infoPage}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
@@ -27,8 +24,7 @@ function infoPage() {
                 <li>
                   <Link href="/">Главная</Link>
                 </li>
-                /
-                <li>О производстве</li>
+                /<li>О производстве</li>
               </ul>
             </div>
             <div className={s.text}>
@@ -109,7 +105,11 @@ function infoPage() {
               </ul>
             </div>
             <div className={s.infoItem}>
-              <img className={s.infoItemImg} src="/images/info/info.webp" alt="ICI info" />
+              <img
+                className={s.infoItemImg}
+                src="/images/info/info.webp"
+                alt="ICI info"
+              />
             </div>
           </div>
         </div>

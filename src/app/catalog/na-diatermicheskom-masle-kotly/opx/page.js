@@ -1,6 +1,5 @@
 // Core
 import Link from "next/link";
-import Head from "next/head";
 
 // Components
 import Footer from "../../../components/Footer/Footer";
@@ -8,20 +7,16 @@ import Footer from "../../../components/Footer/Footer";
 // Style
 import s from "../../catalog.module.css";
 
+export const metadata = {
+  title: "Котлы на диатермическом масле (ВОТ) OPX - ICI Caldaie",
+  description:
+    "Каталог котлов ICI Caldaie, котлы на диатермическом масле (ВОТ) OPX",
+  keywords: "ICI Caldaie, котлы, котлы на диатермическом масле (ВОТ) OPX",
+};
+
 const rex = () => {
   return (
     <>
-      <Head>
-        <title>Котлы на диатермическом масле (ВОТ) OPX - ICI Caldaie</title>
-        <meta
-          name="description"
-          content="Каталог котлов ICI Caldaie, котлы на диатермическом масле (ВОТ) OPX"
-        />
-        <meta
-          name="keywords"
-          content="Каталог котлов ICI Caldaie, котлы на диатермическом масле (ВОТ) OPX"
-        />
-      </Head>
       <section className={s.productBannerSection}>
         <div className={s.productWrapper}>
           <div className="container">
@@ -122,7 +117,10 @@ const rex = () => {
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Технические данные</h2>
-            <img src="/images/catalog/na-diatermicheskom-masle-kotly/opx/table.jpg" alt="Технические данные" />
+            <img
+              src="/images/catalog/na-diatermicheskom-masle-kotly/opx/table.jpg"
+              alt="Технические данные"
+            />
           </div>
           <div className={s.descriptionBlock}>
             <h2 className={s.descriptionTitle}>Стандартная комплектация</h2>

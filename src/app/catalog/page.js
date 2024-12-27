@@ -1,7 +1,5 @@
-"use client";
 // Core
 import Link from "next/link";
-import Head from "next/head";
 
 // Components
 import CatalogSection from "../components/Home/Catalog/CatalogSection";
@@ -10,15 +8,15 @@ import Footer from "../components/Footer/Footer";
 // Styles
 import s from "./catalog.module.css";
 
+export const metadata = {
+  title: "Каталог - ICI Caldaie",
+  description: "Каталог котлов ICI Caldaie",
+  keywords: "ICI Caldaie, котлы, каталог",
+};
+
 function infoPage() {
   return (
     <>
-      <Head>
-        <title>Каталог - ICI Caldaie</title>
-        <meta name="description" content="Каталог котлов ICI Caldaie" />
-        <meta name="keywords" content="ICI Caldaie, котлы, каталог" />
-        <meta property="og:title" content="Каталог - ICI Caldaie" />
-      </Head>
       <section className={s.catalogPage}>
         <div className={s.catalogWrapper}>
           <div className={s.textBlock}>

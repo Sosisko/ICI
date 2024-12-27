@@ -1,9 +1,8 @@
 "use client";
 
 // Core
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-
 
 // Components
 import NavBar from "./NavBar/NavBar";
@@ -15,6 +14,8 @@ function Header() {
   const [isVisible, setIsVisible] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
+  const [isOpenBurgerMenu, setIsOpenBurgerMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,14 +47,19 @@ function Header() {
     >
       <div className="container">
         <div className={s.headerContent}>
-          <Link href="/">
+          <Link href="/" onClick={() => setIsOpenBurgerMenu(false)}>
             <img
               className={`${s.logo} ${isVisible ? s.smallLogo : ""}`}
               src="/images/logo.png"
               alt="ICI CALDAIE logo"
             />
           </Link>
-          <NavBar isVisible={isVisible} isSticky={isSticky} />
+          <NavBar
+            isVisible={isVisible}
+            isSticky={isSticky}
+            isOpenBurgerMenu={isOpenBurgerMenu}
+            setIsOpenBurgerMenu={setIsOpenBurgerMenu}
+          />
         </div>
       </div>
     </header>

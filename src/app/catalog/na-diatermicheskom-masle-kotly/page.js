@@ -1,7 +1,5 @@
-"use client";
 // Core
 import Link from "next/link";
-import Head from "next/head";
 
 // Components
 import Footer from "../../components/Footer/Footer";
@@ -9,28 +7,18 @@ import Footer from "../../components/Footer/Footer";
 // Styles
 import s from "../catalog.module.css";
 
+export const metadata = {
+  title: "Котлы на диатермическом масле - ICI Caldaie",
+  description: "Каталог котлов ICI Caldaie, котлы на диатермическом масле",
+  keywords: "ICI Caldaie, котлы, котлы на диатермическом масле",
+};
 function thermalOilBoilers() {
   return (
     <>
-      <Head>
-        <title>Котлы на диатермическом масле - ICI Caldaie</title>
-        <meta
-          name="description"
-          content="Каталог котлов ICI Caldaie, котлы на диатермическом масле"
-        />
-        <meta
-          name="keywords"
-          content="ICI Caldaie, котлы, котлы на диатермическом масле"
-        />
-        <meta
-          property="og:title"
-          content="Котлы на диатермическом масле - ICI Caldaie"
-        />
-      </Head>
       <section className={s.thermalOilBoilers}>
         <div className={s.wrapper}>
           <div className={s.textBlock}>
-          <div className={s.breadcrumbs}>
+            <div className={s.breadcrumbs}>
               <ul>
                 <li>
                   <Link href="/">Главная</Link>
